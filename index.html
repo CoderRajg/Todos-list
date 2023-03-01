@@ -16,17 +16,6 @@
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">To-Do List</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
         </div>
       </nav>
     </div>
@@ -38,7 +27,7 @@
             type="text"
             class="form-control"
             id="item"
-            aria-describedby="emailHelp"
+            aria-describedby="emailHelp" required
           />
           <div id="emailHelp" class="form-text">Add an itme to the list</div>
         </div>
@@ -47,10 +36,11 @@
           <textarea
             class="form-control"
             id="description"
-            style="height: 100px"
+            style="height: 100px" 
           ></textarea>
         </div>
-        <button type="submit" id="add" class="btn btn-primary">Add item to list</button>
+        <button  id="add" class="btn btn-primary">Add item</button>
+        <button  id="clear" class="btn btn-warning" onclick="cleared()">Clear list</button>
         <div id="items" class="my-4">
           <h2>Your Todos</h2>
           <table class="table" >
